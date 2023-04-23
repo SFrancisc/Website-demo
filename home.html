@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Comunicatia prin satelit</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i">
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/-debug.css">
+        <link rel="stylesheet" href="styles/article.css">
+        <link rel="stylesheet" href="styles/article-image.css">
+        <link rel="stylesheet" href="styles/article-share.css">
+        <style>
+
+            article {
+                display: grid;
+                grid-template-columns: 1fr 0.5in [start] 7.5in [end] 0.5in 1fr;
+
+                height: 100vh;
+
+                padding: 0.5in 0;
+            }
+
+            article * { grid-column: start / end; }
+
+            @media (max-width: 8.5in) {
+                article { grid-template-columns: 1fr 0.5in [start] 90% [end] 0.5in 1fr;}
+            }
+
+            /*img { width: 100%; } */
+
+            a { box-shadow: inset 0 -0.25em hsl(175, 60%, 53%); }
+
+            h1, time { margin-bottom: 0.3rem; }
+            time, img { margin-bottom: 1.0rem; }
+            img, h2 { margin-bottom: 2.4rem; }
+            h2, p { margin-bottom: 2.0rem; }
+            h3 { margin-bottom: 2.0rem; }
+
+            h1 { font: 700 2.0rem/1.2 "Roboto"; color: rgb(0, 132, 155); }
+            time { font: 700 1.0rem/1.2 "Roboto"; color: hsl(00, 0%, 75%); }
+            h2 { font: 700 1.5rem/1.2 "Roboto"; color: rgba(0, 132, 155, 0.473); }
+            p { font: 400 1.0rem/1.5 "Roboto"; color: hsl(00, 0%, 33%); }
+            figcaption p { font: 400 1.0rem/1.5 "Roboto"; color: hsl(000, 000%, 83%); }
+            h3, h4, h5 { font: 700 1.5rem/1.2 "Roboto"; color: rgba(0, 132, 155, 0.473); }
+
+            @media (max-width: 8.5in) { :root { font-size: 18px; } }
+            @media (max-width: 5.0in) { :root { font-size: 16px; } }
+            
+            /*.size-1 { grid-column: 1 / 8; }
+            .size-2 { grid-column: 4 / 5; }*/
+
+        </style>
+    </head>
+    <body>
+        <article id="Comunicarea prin satelit-1">
+            <h1><a href="#Comunicarea prein satelit"><em>Comunicarea</em> prin <em>satelit</em></a></h1>
+            <time datetime="">01.01.2022</time>
+
+            <img src="https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA2dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjAl/MkYxMSUyRjI5JTJGMTI1NzkxN18xMjU3/OTE3X3NhdGVsaXRpLWluLXNwYXRpdS1H/ZXR0eUltYWdlcy0xMjEwNjMzMDAxLmpw/ZyZ3PTc4MCZoPTQ0MCZoYXNoPTk0Mzc4/MDQ5MDMwNjE1OTFiM2MxMmM0MjhlMGIxMWUz.thumb.jpg?tmp=2022-01-03-20-47-49&app=req-61d344d541abe&retry=1">
+            
+            <h2>1. INTRODUCERE</h2>
+
+            <p>
+            <em>Sateliții</em>, sunt special creați pentru telecomunicații. Sunt folositi pentru aplicații mobile precum comunicare cu nave, vehicule, avioane, terminale portabile și pentru emisiuni TV și radio.
+            Ei sunt responsabili pentru furnizarea acestor servicii unei regiuni (zone) atribuită pe pământ. Puterea și lățimea de bandă
+            dintre acești sateliți depind de complexitatea schemelor de protocol de control al traficului
+            și costul stațiilor la sol.
+                Un satelit funcționează cel mai eficient atunci când sunt transmisii
+            focalizate pe o zonă dorită. Atunci când zona este focalizată, atunci
+            emisiile nu ies în afara acelei zone desemnate și astfel
+            minimizând interferența cu celelalte sisteme. Aceasta duce
+            utilizarea mai eficientă a spectrului.
+            Modelele de antenă ale satelitului joacă un rol important și trebuie
+            să fie concepute pentru a acoperi cel mai bine zona geografică desemnată
+            (care este în general neregulată ca formă). Sateliții ar trebui să fie
+            concepute ținând cont de capacitatea sa de utilizare pentru scurt și lung
+            efecte pe termen de-a lungul vieții sale.
+            Stația terestra ar trebui să fie în măsură să controleze satelitul
+            dacă derivă de pe orbită este supus oricărui fel de tragere de la
+            forțele externe.
+            </p>
+
+            <figure>
+            <img class="size-2" src="https://upload.wikimedia.org/wikipedia/commons/a/aa/TOPEX-Poseidon.gif">
+            </figure>
+            <figcaption class="size-6"><p>Comunicarea prin <em>satelit</em>.</p></figcaption>
+            
+
+            <h3>2. NOTIUNI DE BAZA</h3>
+            <p>
+                Sateliții orbitează în jurul Pământului. În funcție de aplicație, aceste orbite pot fi circulare sau eliptice. Sateliți în formă circulară
+                orbitele păstrează întotdeauna aceeași distanță față de suprafața pământului urmând o lege simplă:
+                Forța de atracție Fg a pământului datorată gravitației este egală cu: m*g (R/r)^2 
+                Forța de atracție Fg a pământului datorată gravitației este egală cu: m*g (R/r)^2
+                Forța centrifugă Fc care încearcă să tragă satelitul este egală cu: m*r*ω^2
+            </p>
+
+            <p>
+                Variabilele au următoarea semnificație: m este masa satelitului;
+                R este raza pământului cu R = 6.370 km; ri este distanța dintre satelit și centrul pământului;
+                g este accelerația gravitației cu g = 9,81 m/s2; ω este viteza unghiulară cu ω = 2·π·f, f este frecvența lui rotatia.
+            </p>
+            
+            <p>
+                Pentru a menține satelitul pe o orbită circulară stabilă, următoarea ecuație trebuie să dețină:
+                Fg = Fc, adică ambele forțe trebuie să fie egale. Privind aceasta ecuație, primul lucru de observat este că masa m a
+                satelitul este irelevanta (apare pe ambele părți ale ecuaţie).
+                Rezolvarea ecuației pentru distanța r a satelitului la centrul Pământului rezultă în următoarea ecuație:
+                distanta r = (g*R^2/(2*π*f)^2)1/3
+            </p>
+
+            <p>
+                Din ecuația de mai sus se poate concluziona că distanța a unui satelit la suprafața pământului depinde de rotația frecventă a acestuia.
+                Parametrii importanți în comunicarea prin satelit sunt
+                unghiul de înclinare (fig 1.1) și elevație. Unghiul de înclinare δ este definită între planul ecuatorial,
+                descrise de orbita satelitului. Un unghi de înclinare de 0 grade înseamnă că satelitul se află exact deasupra ecuatorului. Dacă
+                satelitul nu are o orbită circulară, cel mai apropiat punct al pământul se numește perigeu.
+            </p>
+
+            <figure>
+            <img src="fig 2.2.png">
+            </figure>
+
+            <p>
+                Unghiul de elevație ε (figura 1.2) este definit între centrul fasciculului satelitului și a planului tangențial cu cel al Pământului
+                suprafaţă. Așa-numita amprentă poate fi definită ca zona pe care se află pământ unde pot fi recepţionate semnalele satelitului.
+            </p>
+
+            <img src="fig 1.2.png">
+
+            <h4>MISIUNILE ALE SATELITILOR</h4>
+            <p>
+                <em>Prognoza meteo</em>: anumiți sateliți sunt special proiectați pentru a monitoriza
+                condiţiile climatice ale pământului. Ei monitorizează continuu zonele atribuite ale pământului și prezice condițiile meteorologice din acea regiune.
+                Acest lucru se face prin preluarea imaginilor pământului de pe satelit. Aceste imagini sunt transferate utilizând frecvența radio atribuită pământului. Aceşti sateliţi sunt
+                extrem de util în prezicerea dezastrelor precum uraganele și monitorizeaza schimbările în vegetația Pământului, starea mării, culoarea oceanului și câmpuri de gheață.
+            </p>
+
+            <p>
+                <em>Difuzare radio și TV</em>: acești sateliți dedicați sunt responsabili pentru realizarea de 100s de canale de pe tot globul disponibile pentru toată lumea. Ei sunt de asemenea
+                responsabil pentru difuzarea meciurilor live, știri, radio la nivel mondial. Acești sateliți necesită o antenă de 30-40 cm pentru a face aceste canale disponibile la nivel global.
+            </p>
+
+            <p>
+                <em>Sateliti militari</em>: cești sateliți sunt adesea folosiți pentru a colecta informații, așa cum
+                un satelit de comunicații este utilizat în scopuri militare sau ca o armă militară. Un satelit în sine nu este nici militar, nici civil. Este
+                tipul de sarcină utilă pe care o poartă care îi permite să ajungă la o decizie în ceea ce priveşte caracterul său militar sau civil.
+            </p>
+
+            <p>
+                <em>Sateliti de navigatie</em>: sistemul permite o localizare precisă în întreaga lume și cu unele tehnici suplimentare, precizia este în intervalul de
+                cativa metri. Navele și aeronavele se bazează pe GPS ca un sistem de navigație tradițional. Multe vehicule vin instalate cu
+                Receptoare GPS. Acest sistem este utilizat și, de exemplu, pentru flotă, gestionarea camioanelor sau pentru localizarea vehiculelor în caz de furt.
+            </p>
+
+            <p>
+                <em>Telefonul</em>: Una dintre primele aplicații ale sateliților pentru comunicații a fost înființarea coloanelor vertebrale telefonice internaționale.
+                În loc să folosești cabluri, uneori era mai rapid să lansezi un nou satelit. Dar, cablurile de fibră optică încă înlocuiesc satelitul facând comunicarea
+                mult mai rapida (și, desigur, reducând întârzierea cauzată de distanța pe care trebuie să o parcurgă un semnal înainte de a ajunge la destinaţie.).
+                Folosind sateliți, pentru a ajunge de obicei la o distanță de aproximativ 10.000 km distanță, semnalul trebuie să parcurgă aproape 72.000 km,
+                adică trimiterea de date de la sol la satelit și (mai ales) de la satelit către o altă locație de pe pământ. Această cauză este substanțială
+                cantitatea de întârziere și această întârziere devine mai proeminentă pentru utilizatori în timpul apelurilor vocale.
+            </p>
+
+            <p>
+                <em>Conectarea zonelor indepartate</em>: Datorită locației lor geografice, multe locuri de pe tot cuprinsul lumii nu are conexiune directă prin cablu la rețeaua telefonică
+                sau pe internet (de exemplu, cercetători din Antarctica) sau din cauza
+                starii actuale a infrastructurii unei țări. Aici satelitul oferă o acoperire completă și (în general) există un singur satelit mereu prezent peste un orizont.
+            </p>
+
+            <p>
+                <em>Comunicarea mobila globala</em>: Scopul de bază al sateliților pentru comunicațiile mobile este de a extinde aria de acoperire. Sisteme de telefonie mobilă, cum ar fi
+                AMPS și GSM (și succesorii lor) nu acoperă toate părțile ale țarii. Zonele care nu sunt acoperite, au de obicei, o populație scăzută
+                unde este prea scump să se instaleze o stație de bază. Cu integrarea comunicațiilor prin satelit, toate acestea, telefonul mobil
+                poate trece la sateliți care oferă conectivitate la nivel mondial. Sateliții acoperă o anumită zonă de pe pământ. Această zonă este
+                numită „amprentă” acelui satelit. În cadrul amprentei, comunicarea cu acel satelit este posibilă pentru utilizatorii de telefonie mobilă.
+                Acești utilizatori comunică folosind un Mobile-User-Link (MUL). Stațiile de bază comunică cu sateliții folosind un Gateway-Link
+                (GWL). Uneori devine necesar ca satelitul să creeze o legătura de comunicare între utilizatori aparținând a două persoane diferite.
+                Aici sateliții își trimit semnale unul altuia și asta este realizat folosind Inter-Satellite-Link (ISL).
+            </p>
+
+            
+            <h5>BIBLIOGRAFIE</h5>
+            <p>
+                <a href="https://ro.wikipedia.org/wiki/Satelit_artificial"><em>wikipedia</em></a> ; <a href="https://archive.mu.ac.in/myweb_test/Satelight%20Comm..pdf"><em>PDF</em></a>
+            </p>
+        
+        </article>
+    </body>
+</html>
